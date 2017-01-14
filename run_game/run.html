@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/run.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/hitPix.js"></script>
+</head>
+<body>
+<audio src="audio/奔跑音乐.mp3" class="runA" loop></audio>
+<audio src="audio/射击.wav" class="sheA"></audio>
+<audio src="audio/死亡.wav" class="dieA"></audio>
+<audio src="audio/跳跃.wav" class="jumpA"></audio>
+<div class="mask">
+    <span class="life">生命值：</span>
+    <div class="smz">
+        <div class="progress1"></div>
+    </div>
+    <div class="score">积 分：<span>0</span></div>
+</div>
+<div class="start">
+    <div class="game_name">疯狂跑酷</div>
+    <button type="button" class="btn btn-info">开始游戏</button>
+</div>
+<div class="over text-center" style="font-size: 16px">
+    <div class="game" style="font-size: 20px">GAME OVER!</div>
+    当前分数：<span class="scoreEle" style="font-size: 16px">0</span><br>
+    历史记录：
+    <ul class="text-center" style="font-size: 16px">
+
+    </ul>
+    <button type="button" class="btn btn-success again">重新加载</button>
+</div>
+<canvas></canvas>
+<img src="img/person/run1.png" alt="" class="run">
+<img src="img/person/run2.png" alt="" class="run">
+<img src="img/person/run3.png" alt="" class="run">
+<img src="img/person/run4.png" alt="" class="run">
+<img src="img/person/run5.png" alt="" class="run">
+<img src="img/person/run6.png" alt="" class="run">
+<img src="img/person/run7.png" alt="" class="run">
+<img src="img/person/run7.png" alt="" class="run">
+<img src="img/person/run8.png" alt="" class="run">
+
+<img src="img/person/jump.png" alt="" class="jump">
+j
+<img src="img/hinder/hinder01.png" alt="" class="hinder">
+<img src="img/hinder/hinder02.png" alt="" class="hinder">
+<img src="img/hinder/hinder03.png" alt="" class="hinder">
+<img src="img/hinder/hinder04.png" alt="" class="hinder">
+<img src="img/hinder/hinder05.png" alt="" class="hinder">
+<img src="img/hinder/hinder06.png" alt="" class="hinder">
+<img src="img/hinder/hinder07.png" alt="" class="hinder">
+
+<img src="img/1.png" alt="" class="zidan">
+</body>
+</html>

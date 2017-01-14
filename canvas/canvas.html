@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/shape.js"></script>
+</head>
+<body>
+<div class="box">
+    <ul class="meau">
+        <li class="meau_list nav">文件
+            <ul class="meau_inside">
+                <li>新建</li>
+                <li>返回</li>
+                <li>保存</li>
+                <li><input type="file" class="file" value="选择文件"></li>
+            </ul>
+        </li>
+        <li class="meau_list nav">画图
+            <ul class="meau_inside">
+                <li data-role="pen">铅笔</li>
+                <li data-role="line">直线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="arc">圆</li>
+                <li data-role="bian">多边形</li>
+                <li data-role="jiao">多角形</li>
+            </ul>
+        </li>
+        <li class="meau_list nav">画图方式
+            <ul class="meau_inside">
+                <li data-role="stroke">描边</li>
+                <li data-role="fill">填充</li>
+            </ul>
+        </li>
+        <li class="meau_list"><input type="color" data-role="strokeStyle"></li>
+        <li class="meau_list"><input type="color" data-role="fillStyle"></li>
+        <li class="meau_list nav">线条粗细
+            <ul class="meau_inside">
+                <li data-role="1">细</li>
+                <li data-role="3">中</li>
+                <li data-role="5">粗</li>
+            </ul>
+        </li>
+        <li class="meau_list nav tupian">图片处理
+            <ul class="meau_inside">
+                <li data-role="fx">反向</li>
+                <li data-role="msk">马赛克</li>
+                <li data-role="mh">模糊</li>
+            </ul>
+        </li>
+        <li class="meau_list">橡皮擦</li>
+    </ul>
+    <div class="main">
+        <canvas width="600px" height="365px"></canvas>
+        <img src="" alt="" hidden>
+        <div class="copy">
+            <div class="xp"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

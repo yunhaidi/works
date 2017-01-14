@@ -1,0 +1,127 @@
+body,html{
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+canvas{
+    background: #000 url(../img/bg.jpg) repeat-x;
+}
+img{
+    width:100px;
+    position: absolute;
+    top:0;left:0;
+}
+img:not(:first-child){
+    display: none;
+}
+.mask{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top:0;left:0;
+    animation: mask 2s ease forwards;
+}
+.start{
+    width:500px;
+    height:340px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px #ccc;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    z-index: 1;
+    animation: start 2s ease forwards;
+}
+.game_name{
+    margin-top: 100px;
+}
+.btn{
+    margin-top:50px;
+}
+@keyframes start{
+    0% {
+        transform:translate(0,-1000px);
+    }
+    100% {
+        transform:translate(0,0);
+    }
+}
+@keyframes start1{
+    0% {
+        transform:translate(0,0);
+    }
+    100% {
+        transform:translate(0,-1000px);
+    }
+}
+@keyframes mask{
+    0% {
+        background: rgba(0,0,0,0);
+    }
+    100% {
+        background: rgba(0,0,0,.5);
+    }
+}
+@keyframes mask1{
+    0% {
+        background: rgba(0,0,0,.5);
+    }
+    100% {
+        background: rgba(0,0,0,0);
+    }
+}
+
+.life{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+}
+.smz{
+    width: 182px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    top:30px;
+    left: 80px;
+}
+.progress1{
+    width: 180px;
+    height: 18px;
+    background: green;
+}
+.score{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: #fff;
+}
+.over{
+    width:500px;
+    height:340px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 20px #ccc;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    z-index: 1;
+    animation: start1 2s ease forwards;
+}
+.game{
+    line-height: 80px;
+    color: #fff;
+    font-size: 25px;
+}

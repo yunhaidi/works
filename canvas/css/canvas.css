@@ -1,0 +1,90 @@
+*{
+    margin:0;padding:0;list-style: none;text-decoration: none;
+    font-family: "微软雅黑";
+    font-size: 13px;
+}
+.box{
+    width:600px;
+    height:400px;
+    border: 1px solid #000;
+    position: fixed;
+    left:0;right:0;top:0;bottom:0;margin:auto;
+}
+.meau{
+    width:100%;
+    height: 35px;
+    background: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meau_list:nth-child(2){
+    width:55px;
+}
+.meau_list:nth-child(4),.meau_list:nth-child(5){
+    margin-top: 5px;
+}
+.meau_list{
+    width:75px;
+    line-height: 35px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.meau_inside{
+    position: absolute;
+    left: 0;
+    top:35px;
+    background: #888;
+    display: none;
+    width:100%;
+    z-index: 999;
+}
+.meau_inside li{
+    width:100%;
+    height: 25px;
+    line-height: 25px;
+}
+@keyframes color{
+    0% {
+        color:#333;
+    }
+    100% {
+        color:#fff;
+    }
+}
+@keyframes color1{
+    0% {
+        color:#fff;
+    }
+    100% {
+        color:#000;
+    }
+}
+.files{
+    width: 50px;
+    height:20px;
+    font-size: 12px;
+}
+.main{
+    width:100%;
+    height:365px;
+    position: relative;
+}
+canvas{
+    background: #efefef;
+}
+
+.copy{
+    position: absolute;
+    left:0;top:0;z-index:10;
+    width:100%;height:100%;
+}
+.xp{
+    width:10px;
+    height:10px;
+    border: 1px solid #000;
+    position: absolute;
+    top:0;left:0;
+    display: none;
+}
