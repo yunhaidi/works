@@ -1,0 +1,94 @@
+*{
+	margin:0;padding:0;list-style: none;
+}
+body{
+	width:100%;
+	height: 100%;
+	background: url(../img/nav_side.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.nav_side_top{
+	width: 100%;
+	height: 2rem;
+	margin-top:1.2rem;
+	position: relative;
+}
+.top_left{
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	position: absolute;
+	left:0.52rem;
+	overflow: hidden;
+}
+.names{
+	color:#fff;
+	font-size: 0.5rem;
+	font-family: helvetica;
+	position: absolute;
+	top: 0.5rem;
+	left: 2.4rem;
+}
+.description{
+	width: 2.5rem;;
+	font-size: 0.3rem;
+	color:#666;
+	position: absolute;
+	top: 1.2rem;
+	left: 2.4rem;
+}
+.zuan{
+	width: 1rem;
+	position: absolute;
+	top: 0.2rem;
+	left: 2.5rem;
+}
+.zuan img{
+	float:left;
+	width: 0.3rem;
+}
+.nav_side_list{
+	width: 90%;
+	margin: 0.8rem auto 0;
+}
+.nav_side_list li{
+	width: 100%;
+	height: 1rem;
+	border-bottom: 1px solid #464645;
+	line-height: 0.6rem;
+	position: relative;
+	cursor: pointer;
+}
+.nav_side_list span{
+	color:#fff;
+	font-size: 0.35rem;
+	font-weight: bold;
+	margin-left:1.2rem;
+}
+.before img{
+	position: absolute;
+	top: 0.3rem;
+	width: 0.4rem;
+	left:0.4rem;
+}
+.after img{
+	position: absolute;
+	right: 0.4rem;
+	width: 0.2rem;
+	top:0;bottom:0;margin:auto 0;
+}
+.nav_side_bottom{
+	width: 90%;
+	font-size:0.3rem;
+	color:#666;
+	position:absolute;
+	bottom:0.5rem;
+	left:0;right:0;margin:0 auto;
+}
+.nav_side_bottom div:first-child{
+	float:left;
+}
+.nav_side_bottom div:last-child{
+	float:right;
+}

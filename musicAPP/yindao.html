@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="image/bg1.jpg" alt="" width="100%">
+            <img src="image/1.png" alt="" class="p1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="image/2.png" alt="" class="p2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+            <img src="image/btn.png" alt="" class="btn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+        </div>
+        <div class="swiper-slide">
+            <img src="image/bg2.jpg" alt="" width="100%">
+            <img src="image/3.png" alt="" class="p1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="image/4.png" alt="" class="p3 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+            <img src="image/btn.png" alt="" class="btn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+        </div>
+        <div class="swiper-slide">
+            <img src="image/bg3.jpg" alt="" width="100%">
+            <img src="image/5.png" alt="" class="p1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="image/6.png" alt="" class="p4 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+            <img src="image/btn.png" alt="" class="btn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/music.jpg" alt="" width="100%">
+            <div class="aiwan ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">爱玩音乐盒</div>
+            <a href="login.html"><div class="start ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">立即开启</div></a>
+          
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function resize(originSize,type){
+        var type=type||"x";
+        var cw=document.documentElement.clientWidth;
+        var ch=document.documentElement.clientHeight;
+        if(type=="x"){
+            var scale=cw/originSize*100;
+        }
+        if(type=="y"){
+            var scale=ch/originSize*100;
+        }
+        var html=document.querySelector("html");
+        html.style.fontSize=scale+"px";
+    }
+        resize(1334,"y");
+    var mySwiper = new Swiper ('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    })
+
+</script>
+</html>

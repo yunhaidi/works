@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title></title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/header_footer.css" />
+    <link rel="stylesheet" href="css/my.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/index.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</head>
+<body onload="loaded()">
+<div id="header"><span style="color:#f8c900">E</span>ROX
+	<a href="nav_side.html">
+		<div class="nav">
+			<div style="margin-top:0.2rem"></div>
+			<div></div>
+			<div></div>
+		</div>
+	</a>
+	<div class="search"></div>
+</div>
+<div class="meau">
+	<a href="my.html" class="meau_list" style="color:#f8c900">我的</a>
+	<a href="index.html" class="meau_list">推荐</a>
+	<a href="fenlei.html" class="meau_list">分类</a>
+	<a href="paihangbang.html" class="meau_list">排行榜</a>
+</div>
+<div id="wrapper">
+	<div id="scroller">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/sucai/IMG_2298.JPG" alt="" height="100%" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/sucai/IMG_2290.JPG" alt="" width="100%" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/sucai/IMG_2323.JPG" alt="" height="100%" />
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<ul class="my_list">
+			<li><a href="login.html">
+				<div class="bendi"></div>
+				<div style="color:#fff">本地</div>
+			</a>				
+			</li>
+			<li>
+				<div class="zuijin"></div>
+				<div style="color:#fff">最近</div>
+			</li>
+			<li>
+				<div class="shoucang"></div>
+				<div style="color:#fff">收藏</div>
+			</li>
+		</ul>
+		
+		<div class="shoucang_list">
+			<div class="shoucang_word">
+				<div class="shoucang_style">JAZZ</div>
+				<div class="shoucang_number">已创建25首</div>
+			</div>		
+		</div>
+		<div class="shoucang_list shoucang_list1">
+			<div class="shoucang_word">
+				<div class="shoucang_style">ROCK</div>
+				<div class="shoucang_number">已创建8首</div>
+			</div>		
+		</div>
+		<div class="shoucang_list shoucang_list2">
+			<div class="shoucang_word">
+				<div class="shoucang_style">POPULAR</div>
+				<div class="shoucang_number">已创建40首</div>
+			</div>		
+		</div>
+		<div class="shoucang_list shoucang_list3">
+			<div class="shoucang_word">
+				<div class="shoucang_style">R&B</div>
+				<div class="shoucang_number">已创建25首</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<a href="play.html">
+	<div id="footer">
+	<div class="footer_l">
+		<div class="photo">
+			<img src="img/sucai/IMG_2441.JPG" alt="" width="100%"/>
+		</div>
+		<div class="song">
+			<div class="song1">Just Dance</div>
+			<div class="song2">Lady Gaga</div>
+		</div>
+	</div>
+	<div class="footer_r">
+		<div class="start"></div>
+		<div class="next"></div>
+	</div>
+</div>
+</a>
+
+
+</body>
+<script>
+   var mySwiper = new Swiper ('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2500,
+
+//      onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+//          swiperAnimateCache(swiper); //隐藏动画元素
+//          swiperAnimate(swiper); //初始化完成开始动画
+//      },
+//      onSlideChangeEnd: function(swiper){
+//          swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+//      }
+   })
+</script>
+</html>
+
