@@ -212,7 +212,7 @@ h3{
 }
 
 .contact1,.contact2{
-    margin: 0 25px;
+    padding: 0 25px;
     height:500px;
     box-sizing: border-box;
 }
