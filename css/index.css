@@ -5,6 +5,9 @@
     font-family: "微软雅黑";
     color:#595555;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     display: block;
     text-decoration: none;
